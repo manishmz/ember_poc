@@ -1,0 +1,12 @@
+<h3>Users</h3>
+{{#if (can 'create user')}}
+    <span>You have permission to add new user</span>
+{{else}}
+    <span>You don't have permission to add new user, contact admin</span>
+{{/if}}
+<ul>
+    {{#each model as |user|}}
+        <li>{{#user-li name=user.name userId=user.id}}Hey I am button{{/user-li}}</li>
+    {{/each}}
+</ul>
+{{outlet}}

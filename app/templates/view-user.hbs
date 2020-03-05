@@ -1,0 +1,18 @@
+<h3>View User</h3>
+<div>
+    {{#view-field name="Name" value=model.name}}{{/view-field}}    
+    {{#view-field name="Email" value=model.email}}{{/view-field}}
+    {{#view-field name="Phone" value=model.phone}}{{/view-field}}
+    {{#view-field name="Website" value=model.website}}{{/view-field}}
+    {{#view-field name="Company" value=model.company.name}}{{/view-field}}
+    {{#view-field name="Date of Birth" value=model.dob}}{{/view-field}}
+    {{!-- <ViewField @name="Name" @value={{@model.name}}/>
+    <ViewField @name="Email" @value={{@model.email}}/>
+    <View-Field @name="Phone" @value='{{@model.phone}}'/>
+    <View-Field @name="Website" @value={{@model.website}}/>
+    <View-Field @name="Company" @value={{@model.company.name}}/>
+    <View-Field @name="Date of Birth" @value={{@model.dob}}/> --}}
+    <button class="button" {{action 'showUsername'}}>Show Username</button>
+</div>
+
+{{outlet}}

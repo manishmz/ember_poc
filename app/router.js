@@ -7,6 +7,13 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('users');
+  this.route('view-user', {path: "view-user/:user_id"});
+
+  this.route('page_not_found', {
+    path: '/*wildcard'
+  });
+  this.route('ddau');
 });
 
 export default Router;

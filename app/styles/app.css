@@ -1,0 +1,38 @@
+.button {
+    background-color:chocolate; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 0;
+}
+
+.inline {
+    display: inline;
+}
+.form-control{
+    margin: 5px 0;
+}
+
+.panel {
+    margin: 0px 10px;
+    display: inline-block;
+    width: 10%;
+    height: 10vh;
+    border: solid 2px aquamarine;
+}
+
+.panel-body {
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+
+.component-panel {
+    width: 95%;
+    border: solid 2px coral;
+    padding: 10px;
+}
